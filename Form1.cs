@@ -24,15 +24,7 @@ namespace DB_value_delete
         }
         public void SqlConn()
         {
-           //string DataSource = Environment.MachineName;
-           //string DataSource = "THINKPAD";
-
            string DataSource = richTextBox1.Text;
-
-           //string DBname = textBox2.Text;
-           //string Login = textBox3.Text;
-           //string Pass = textBox4.Text;
-           //string connString = @"Data Source=" + DataSource + ";Initial Catalog=VeeamBackup" + ";Persist Security Info=True;User ID=" + Login + ";Password=" + Pass; // Подключение по логину, паролю и имени базы.
 
            SqlConnection conn;
            string connString = @"Data Source=" + DataSource + ";Initial Catalog=VeeamBackup" + ";Integrated Security=True"; 
